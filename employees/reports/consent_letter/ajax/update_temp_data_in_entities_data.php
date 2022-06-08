@@ -6,17 +6,8 @@
 
 
 
-    echo '<pre>';
-    print_r($_REQUEST);
-    echo '</pre>';
-
-// 		$sql3244 = "SELECT * FROM ".$cid."_employees WHERE emp_id = '".$_REQUEST['emp_id']."'";
-// 		if($reasdasds = $dbc->query($sql3244)){
-// 			if($rosaddsw = $reasdasds->fetch_assoc()){
-// 				$sqlinsertdata = "INSERT INTO ".$cid."_consent_letter ( `emp_id`, `en_name`, `department`, `position`,`branch`,`division`,`team`) VALUES ('".$rosaddsw['emp_id']."','".$rosaddsw['en_name']."','".$rosaddsw['department']."','".$rosaddsw['position']."','".$rosaddsw['branch']."','".$rosaddsw['division']."','".$rosaddsw['team']."')";
-// 				$dbc->query($sqlinsertdata);
-// 			}
-// 		}
+    $sql3244 = "UPDATE ".$cid. "_sys_settings ' SET c_company_temp = '".$_REQUEST['field1']. "', c_address_temp = '".$_REQUEST['field2']. "', c_function_temp = '" . $_REQUEST['field3'] . "', c_telephone_temp = '" . $_REQUEST['field4']. "', c_email_temp = '" . $_REQUEST['field5'] . "'";
+    $dbc->query($sql3244);
 
 		
 	

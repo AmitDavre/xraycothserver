@@ -69,9 +69,15 @@
 
 	// alter columns in entities data table 
 	$db_name20dd001 = $cid."_entities_data";
-	$sql200dd01 = "ALTER TABLE `$db_name20dd001` ADD `website_status`  VARCHAR(255)  NULL AFTER `attach3`, ADD `website_name` VARCHAR(255) NULL AFTER `website_status`, ADD `contact_info_status` VARCHAR(255) NULL AFTER `website_name`, ADD `c_company` VARCHAR(255) NULL AFTER `contact_info_status`, ADD `c_address` TEXT NOT NULL AFTER `c_company`, ADD `c_function` VARCHAR(55) NULL AFTER `c_address`, ADD `c_telephone` VARCHAR(55) NULL AFTER `c_function`, ADD `c_email` VARCHAR(55) NULL AFTER `c_telephone`, ADD `c_company_th` VARCHAR(255) NULL AFTER `c_email`, ADD `c_address_th` TEXT NOT NULL AFTER `c_company_th`, ADD `c_function_th` VARCHAR(55) NULL AFTER `c_address_th`, ADD `c_telephone_th` VARCHAR(55) NULL AFTER `c_function_th`, ADD `c_email_th` VARCHAR(55) NULL AFTER `c_telephone_th`,ADD `c_company_temp` VARCHAR(255) NULL AFTER `c_email_th`, ADD `c_address_temp` TEXT NOT NULL AFTER `c_company_temp`, ADD `c_function_temp` VARCHAR(55) NULL AFTER `c_address_temp`, ADD `c_telephone_temp` VARCHAR(55) NULL AFTER `c_function_temp`, ADD `c_email_temp` VARCHAR(55) NULL AFTER `c_telephone_temp`";
+	$sql200dd01 = "ALTER TABLE `$db_name20dd001` ADD `website_status`  VARCHAR(255)  NULL AFTER `attach3`, ADD `website_name` VARCHAR(255) NULL AFTER `website_status`, ADD `contact_info_status` VARCHAR(255) NULL AFTER `website_name`, ADD `c_company` VARCHAR(255) NULL AFTER `contact_info_status`, ADD `c_address` TEXT NOT NULL AFTER `c_company`, ADD `c_function` VARCHAR(55) NULL AFTER `c_address`, ADD `c_telephone` VARCHAR(55) NULL AFTER `c_function`, ADD `c_email` VARCHAR(55) NULL AFTER `c_telephone`, ADD `c_company_th` VARCHAR(255) NULL AFTER `c_email`, ADD `c_address_th` TEXT NOT NULL AFTER `c_company_th`, ADD `c_function_th` VARCHAR(55) NULL AFTER `c_address_th`, ADD `c_telephone_th` VARCHAR(55) NULL AFTER `c_function_th`, ADD `c_email_th` VARCHAR(55) NULL AFTER `c_telephone_th`";
 
 		$result200ddd01 = $dbc->query($sql200dd01) ;
+
+	// alter columns in entities data table 
+	$db_name20dd0asda01 = $cid."_sys_settings";
+	$asdssadas = "ALTER TABLE `$db_name20dd0asda01` ADD `c_company_temp` VARCHAR(255) NULL AFTER `scan_id`, ADD `c_address_temp` TEXT NULL AFTER `c_company_temp`, ADD `c_function_temp` VARCHAR(255) NULL AFTER `c_address_temp`, ADD `c_telephone_temp` VARCHAR(255) NULL AFTER `c_function_temp`, ADD `c_email_temp` VARCHAR(255) NULL AFTER `c_telephone_temp`";
+
+		$result200ddsadad01 = $dbc->query($asdssadas) ;
 
 
 ?>

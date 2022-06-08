@@ -502,13 +502,21 @@ if ($result_from_consent_letter = $dbc->query($sql_get_from_consent_letter)) {
 			}
 
 			var la = $('#show_lang_field').val();
+			window.open('consent_letter/view_consent_letter.php?id=' + id + '&d=' + d + '&w=' + w + '&l=' + l + '&r=' + r + '&la=' + la, '_blank');
 
-			var field1 = $('#field1').var();
-			var field2 = $('#field2').var();
+
+			var field1 = $('#field1').val();
+			var field2 = $('#field2').val();
 			var field3 = $('#field3').val();
 			var field4 = $('#field4').val();
 			var field5 = $('#field5').val();
 
+
+			console.log(field1);
+			console.log(field2);
+			console.log(field3);
+			console.log(field4);
+			console.log(field5);
 			if (field1 != '') {
 				var f1 = '1';
 			} else {
@@ -540,7 +548,7 @@ if ($result_from_consent_letter = $dbc->query($sql_get_from_consent_letter)) {
 			}
 
 			$.ajax({
-				url: "ajax/update_temp_data_in_entities_data.php",
+				url: "consent_letter/ajax/update_temp_data_in_entities_data.php",
 				type: 'POST',
 				data: {
 					field1: field1,
