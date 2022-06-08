@@ -200,7 +200,7 @@
 
 	if($_GET['l'] == '1')
 	{
-		$imgfile = '<img src="../../../'.$logoimage.'" style="height:35px;max-width:280px">';
+		$imgfile = '<img src="../../../'.$logoimage. '" style="height:35px;max-width:280px;">';
 	}
 	else if($_GET['l'] == '0')
 	{
@@ -278,29 +278,34 @@
     margin-bottom: 2.5cm;
 
 }</style>';
-	// $html .= $imgfile;
+	$html .= $imgfile;
 	$html .= $text1;
 	$html .= $block2;
-	// $html .= $imgfile;
+	if ($langvalue == 'en') {
+	 $html .= $imgfile;
+	
+	}
 	if($langvalue == 'th')
 	{
 		$html .= '<pagebreak>';
+		$html .= $imgfile;
 	}
 	$html .= $text3;
 	$html .= '</body></html>';	
-	
+
 
 	
 	require_once(DIR."mpdf7/vendor/autoload.php");
 
-	//class mPDF ([ string $mode [, mixed $format [, float $default_font_size [, string $default_font [, float $margin_left , float $margin_right , float $margin_top , float $margin_bottom , float $margin_header , float $margin_footer [, string $orientation ]]]]]])
-	$mpdf = new mPDF('UTF-8', 'A4-P', 12, 'leelawadee', 10, 10, 10, 10, 0, 0);
+//class mPDF ([ string $mode [, mixed $format [, float $default_font_size [, string $default_font [, float $margin_left , float $margin_right , float $margin_top , float $margin_bottom , float $margin_header , float $margin_footer [, string $orientation ]]]]]])
 
-	$mpdf->SetHTMLHeader('
-	<div style="text-align: right; font-weight: bold;">
-	    My document
-	</div>');
-	
+	if ($langvalue == 'th') {
+		$mpdf = new mPDF('UTF-8', 'A4-P', 12, 'leelawadee', 10, 10, 10, 10, 0, 0);
+	}
+	else{
+		$mpdf = new mPDF('UTF-8', 'A4-P', 11.5, 'leelawadee', 10, 10, 10, 10, 0, 0);
+	}
+
 	$mpdf->SetTitle($compinfo[$lang.'_compname'].' ('.strtoupper($_SESSION['rego']['cid']).') '.$_SESSION['rego']['cur_year']);
 	
 	// $mpdf->WriteHTML($style,1)
