@@ -509,16 +509,51 @@ if ($result_from_consent_letter = $dbc->query($sql_get_from_consent_letter)) {
 			var field4 = $('#field4').val();
 			var field5 = $('#field5').val();
 
-			
-			// $.ajax({
-			// 	url: "ajax/.php",
-			// 	type: 'POST',
-			// 	data: formData,
-			// 	success: function(result) {
-			// 		//$('#dump').html(result); return false;
-			// 			window.open('consent_letter/view_consent_letter.php?id=' + id + '&d=' + d + '&w=' + w + '&l=' + l + '&r=' + r + '&la=' + la, '_blank');
-			// 	},
-			// });
+			if (field1 != '') {
+				var f1 = '1';
+			} else {
+				var f1 = '0';
+			}
+
+			if (field2 != '') {
+				var f2 = '1';
+			} else {
+				var f2 = '0';
+			}
+
+			if (field3 != '') {
+				var f3 = '1';
+			} else {
+				var f3 = '0';
+			}
+
+			if (field4 != '') {
+				var f4 = '1';
+			} else {
+				var f4 = '0';
+			}
+
+			if (field5 != '') {
+				var f5 = '1';
+			} else {
+				var f5 = '0';
+			}
+
+			$.ajax({
+				url: "ajax/update_temp_data_in_entities_data.php",
+				type: 'POST',
+				data: {
+					field1: field1,
+					field2: field2,
+					field3: field3,
+					field4: field4,
+					field5: field5
+
+				},
+				success: function(result) {
+					// window.open('consent_letter/view_consent_letter.php?id=' + id + '&d=' + d + '&w=' + w + '&l=' + l + '&r=' + r + '&la=' + la, '_blank');
+				},
+			});
 
 
 
