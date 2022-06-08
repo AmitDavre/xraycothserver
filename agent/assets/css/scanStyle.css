@@ -1,0 +1,290 @@
+
+body{
+	background:#fff;
+	margin:50px 0 0 0 !important;
+}
+a {
+	cursor:pointer;
+}
+	.btn {
+		line-height:46px !important;
+		font-size:16px;
+		text-transform:uppercase;
+		text-align:left;
+		border-radius:3px;
+		font-weight:600;
+		color:#fff !important;
+		padding:0 20px;
+	}
+	.btn i {
+		float:right;
+		line-height:46px;
+	}
+.main-header {
+	z-index: 99;
+	width: 100%;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	filter: none;
+	background-color: green;
+	background-color: #333;
+	box-shadow: 0 6px 0 0 rgba(0, 0, 0, .01), 0 15px 32px 0 rgba(0, 0, 0, .06);
+	position: fixed;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+	height: 50px;
+	
+}
+.container_header {
+	float: none;
+	width: 100%;
+	line-height:50px; 
+	padding:0 0px; 
+	text-transform:uppercase; 
+	font-size:18px; 
+	text-align:center; 
+	font-weight:600; 
+	color:#fff;
+}
+.container_header a i {
+	line-height:50px;
+}
+.container_full {
+	margin-top: 0px;
+	padding: 10px;
+	xmin-height: calc(100vh - 100px);
+	min-height: 0;
+	background:#fff;
+}
+.list-group .myList  {
+	padding:10px 15px;
+	font-size:18px;
+}
+
+/*.table#dataTable thead th {
+	padding-left:10px !important;
+}
+*/
+table.scanTable th, 
+table.scanTable td {
+	padding:5px 10px !important;
+}
+table.scanTable tbody th {
+	white-space:nowrap !important;
+}
+b {
+	font-weight:600 !important;
+}
+::-webkit-input-placeholder{
+	color:#999;
+	opacity:1;
+}
+
+	table#itemTable tbody tr.selected:nth-child(odd) {
+		background: #cfc;
+	}
+	table#itemTable tbody tr.selected:nth-child(even) {
+		background: #dfd;
+	}
+	table#itemTable tbody td {
+		font-size:13px;
+		padding:8px 5px;
+		color:#333;
+	}
+	table#itemTable .nowrap {
+		white-space:nowrap;
+	}
+	table#itemTable td.nopad {
+		padding:0 !important;
+		text-align:center;
+		vertical-align:middle;
+	}
+
+table.scanTable th, 
+table.scanTable td {
+	padding:5px 10px !important;
+	
+}
+table.scanTable tbody th {
+	white-space:nowrap;
+	font-weight:600;
+	padding:5px 5px !important;
+	line-height:140%;
+}
+table.scanTable tbody td {
+	padding:5px 6px !important;
+	line-height:140%;
+}
+table.dataTable tbody tr:hover {
+	background: #cfc;
+	background: #ff6;
+}
+table.dataTable tbody tr.selected:nth-child(odd) {
+	background: #cfc;
+	background: #ff6;
+}
+table.dataTable tbody tr.selected:nth-child(even) {
+	background: #dfd;
+	background: #ff6;
+}
+table.dataTable tbody td {
+	font-size:13px;
+	padding:8px 5px;
+	color:#333;
+	cursor:pointer;
+}
+table.dataTable .nowrap {
+	white-space:nowrap;
+}
+table.dataTable td.nopad {
+	padding:0 !important;
+	text-align:center;
+	vertical-align:middle;
+}
+table.dataTable {
+	position:absolute !important;
+	left:0 !important;
+}
+xtable.dataTable thead {
+	display:none;
+}
+a.myList {
+	color:#333 !important;
+	cursor:pointer;
+}
+
+.scanInput {
+	width:100%; 
+	margin:0; 
+	border:0; 
+	padding:7px; 
+	text-align:center;
+	font-weight:600; 
+	color:#a00; 
+	font-size:16px; 
+	box-shadow:inset 0 0 5px #069; 
+	outline:none; 
+	border-radius:0px
+}
+.dataTables_scrollBody{
+ overflow-x:hidden !important;
+ overflow-y:auto !important;
+}
+
+	#accordion {
+		border:0;
+	}
+	#accordion .card-header {
+		background:#88e;
+		border-radius:0;
+		padding:1px 20px;
+		cursor:pointer;
+		border:0;
+		color:#fff;
+	}
+	#accordion h5 {
+		color:#fff;
+	}
+	#accordion .card-body {
+		background:#fff;
+		padding:3px;
+		border:0;
+	}
+	.card {
+		margin-bottom:5px;
+		border:0;
+	}
+	table th {
+		font-weight:600;
+	}
+
+	.table.table-sm td, 
+	.table.table-sm th {
+		padding:5px 10px;
+	}
+
+
+.bg-green {
+	background: #080 !important;
+}
+.bg-blue {
+	background: #08c !important;
+}
+.bg-orange {
+	background: #e60 !important;
+}
+.bg-purple {
+	background:#a4a !important;
+}
+.bg-red {
+	background: #f00 !important;
+}
+.bg-gray {
+	background: #aaa !important;
+}
+.bg-brown {
+	background: #960 !important;
+}
+
+
+.btn-purple {
+  color: #fff;
+  background-color: #a4a;
+  border-color: #a4a;
+}
+
+.btn-purple:hover {
+  color: #fff;
+  background-color: #a4a;
+  border-color: #a4a;
+}
+
+.btn-purple:focus, .btn-purple.focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 80, 220, 0.5);
+}
+
+.btn-purple.disabled, .btn-purple:disabled {
+  color: #fff;
+  background-color: #b5b;
+  border-color: #b5b;
+}
+
+.btn-purple:not(:disabled):not(.disabled):active, .btn-purple:not(:disabled):not(.disabled).active,
+.show > .btn-purple.dropdown-toggle {
+  color: #fff;
+  background-color: #a4a;
+  border-color: #a4a;
+}
+
+.btn-purple:not(:disabled):not(.disabled):active:focus, .btn-purple:not(:disabled):not(.disabled).active:focus,
+.show > .btn-purple.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 80, 220, 0.5);
+}
+
+.modal-body h5 {
+	width:100%;
+	text-align:center;
+	background:#666;
+	color:#fff;
+	padding:8px;
+	border-radius:3px;
+	margin:0 0 8px;
+	font-size:18px;
+}
+
+.modal {
+	margin-top:20px;
+}
+
+a.xxxmyList:hover {
+	background: #ff6 !important;
+}
+.list-group-item {
+	padding:5px 15px !important;
+	text-align:center;
+}
+
+
+

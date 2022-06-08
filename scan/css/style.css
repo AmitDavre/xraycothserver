@@ -1,0 +1,254 @@
+﻿body {
+	height:100%;
+}
+.time-wrapper {
+	position:absolute;
+	top:80px; bottom:0;
+	left:0; 
+	right:0;
+	bottom:0;
+	padding:10px;
+	text-align:center;
+	xheight:calc(100% - 60px);
+	xbackground:blue;
+}	
+.body-wrapper {
+	max-width:1000px;
+	margin:0 auto;
+	min-height:800px;
+	xheight:calc(100% - 120px);
+	width:95%;
+	border-radius: 0 0 3px 3px;
+	overflow:hidden;
+	xbackground:green;
+}	
+.video_wrapper {
+	width:100%;
+	position:relative;
+	xoverflow:hidden;
+	border-radius: 3px;
+	min-height:calc(100% - 137px);
+	height:calc(100% - 137px);
+	xbackground:red;
+}
+.header {
+	z-index: 9999;
+	width: 100%;
+	margin: 0;
+	border: 0;
+	padding: 0 20px;
+	filter: none;
+	position: fixed;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+	font-size:30px; 
+	font-weight:600; 
+	color:#fff;
+	line-height:80px;
+	text-align:left;
+	background:#000;
+}
+.header a {
+	color:#fff;
+	float:right;
+}
+
+h1.scan_clock {
+	color: white;
+	margin: 0;
+	padding: 5px 10px;
+	font-size:80px;
+	text-align:center;
+	font-family: monospace;
+	width:100%;
+}
+
+.btn:focus {
+	outline: none !important;
+	box-shadow: none;
+}
+.btn {
+	font-size:28px !important;
+	line-height:55px !important;
+	padding:0 0 3px !important;
+	border-radius:3px !important;
+}
+.btnTable {
+	width:100%;
+	margin:0;
+	table-layout:fixed;
+	border-collapse:collapse;
+	margin-bottom:8px;
+}
+.sFilter {
+	padding:8px 15px;
+	font-size:34px;
+	width:100%;
+	border:0;
+	outline:0;
+	box-shadow:0;
+	border-radius:3px;
+	margin-bottom:8px;
+}
+#outputData {
+	position:absolute;
+	top:20px;
+	left:20px;
+	right:20px;
+	background: rgba(255,255,255,0.7);
+	font-size:30px;
+	color:#000;
+	text-align:center;
+	padding:10px;
+	border-radius:3px;
+	line-height:130%;
+}
+#emp_image {
+	position:absolute;
+	top:10px;
+	right:10px;
+	border-radius:50%;
+	width:200px;
+	height:200px;
+	display:none;
+	box-shadow:0 0 20px rgba(0,0,0,0.6);
+}
+
+.autocomplete-suggestions { 
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
+	border: 0px solid #ccc;
+	xborder-top:0;
+	margin:3px 0;
+	border-radius:3px;
+	background: #fff; 
+	cursor: default; 
+	overflow-y: auto;
+	z-index:1 !important;
+	min-height:auto !important;
+	max-height:calc(100% - 290px) !important;
+	xheight:calc(100% - 280px) !important;
+}
+.autocomplete-suggestion { 
+	padding: 2px 15px; 
+	white-space: nowrap; 
+	overflow: hidden;
+	font-size:34px;
+}
+.autocomplete-no-suggestion { 
+	padding: 2px 15px;
+}
+.autocomplete-selected { 
+	background: #eee;
+}
+.autocomplete-suggestions strong { 
+	font-weight: 600; color: #c00; 
+}
+.autocomplete-group { 
+	padding: 2px 5px; 
+	font-weight: bold; 
+	font-size: 16px; 
+	color: #000; 
+	display: block; 
+	border-bottom: 1px solid #000; 
+}
+::-webkit-scrollbar {
+		width: 2px;
+		height: 2px;
+	 display:none;
+}
+::-webkit-scrollbar-thumb {
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+		background: rgba(0, 0, 0, 0.2);
+	 display:none;
+}
+::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+	 display:none;
+}
+
+*::-webkit-input-placeholder {
+		color:#aaa;
+	 font-style:italic;
+}
+*:-moz-placeholder {
+		color:#aaa;
+	 font-style:italic;
+}
+*::-moz-placeholder {
+		color:#aaa;
+	 font-style:italic;
+}
+*:-ms-input-placeholder {
+		color:#aaa;
+	 font-style:italic;
+}
+
+@media only screen and (max-width: 430px) {
+
+	.time-wrapper {
+		top:60px;
+	}	
+	.body-wrapper {
+		max-width:420px;
+		min-height:620px;
+		xheight:600px;
+		xheight:calc(100% - 70px);
+		width:95%;
+	}	
+	.video_wrapper {
+		min-height:calc(100% - 100px);
+		height:calc(100% - 100px);
+	}
+	.header {
+		padding: 0 15px;
+		font-size:20px; 
+		line-height:60px;
+	}
+	h1.scan_clock {
+		padding: 0px 10px;
+		font-size:50px;
+	}
+	.btn {
+		font-size:18px !important;
+		line-height:40px !important;
+		padding:0 !important;
+	}
+	.sFilter {
+		font-size:18px;
+	}
+	#outputData {
+		top:10px;
+		left:10px;
+		right:10px;
+		font-size:18px;
+		padding:8px 5px;
+	}
+	.autocomplete-suggestions { 
+		min-height:auto !important;
+		max-height:calc(100% - 200px) !important;
+		xheight:calc(100% - 200px) !important;
+	}
+	.autocomplete-suggestion { 
+		padding: 5px 10px; 
+		font-size:18px;
+	}
+	#emp_image {
+		position:absolute;
+		top:10px;
+		right:10px;
+		border-radius:50%;
+		width:30%;
+		height:auto;
+		box-shadow:0 0 15px rgba(0,0,0,0.5);
+	}
+}
+
+
+
+

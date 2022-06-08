@@ -1,0 +1,379 @@
+.croppie-container {
+	padding: 30px;
+	padding:0;
+	margin:0;
+	float:left;
+	border:0px red dotted;
+	margin-right:20px;
+	background:url(../../images/profile_image.jpg) no-repeat center center;
+}
+.croppie-container .cr-image {
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform-origin: 0 0;
+}
+
+.croppie-container .cr-boundary {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+.croppie-container .cr-viewport {
+	position: absolute;
+	border: 1px solid #fff;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	box-shadow:0 0 0 1000px rgba(0, 0, 0, 0.5);
+	z-index: 0;
+}
+.croppie-container .cr-vp-circle {
+	border-radius: 50%;
+}
+.croppie-container .cr-overlay {
+	z-index: 1;
+	position: absolute;
+	cursor: move;
+}
+.croppie-container .cr-slider-wrap {
+	width: 75%;
+	margin: 0 auto;
+	margin-top: 25px;
+	text-align: center;
+	margin:0;
+	display:none;
+	width:0;
+	height:0;
+}
+.croppie-result {
+	position: relative; 
+	overflow: hidden;
+}
+.croppie-result img {
+	position: absolute;
+}
+
+/*************************************/
+/***** STYLING RANGE INPUT ***********/
+/*************************************/
+/*http://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html */
+/*************************************/
+
+.cr-slider {
+    -webkit-appearance: none;/*removes default webkit styles*/
+    /*border: 1px solid white; *//*fix for FF unable to apply focus style bug */
+    width: 300px;/*required for proper track sizing in FF*/
+    max-width: 100%;
+}
+.cr-slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 0;
+    border-radius: 3px;
+}
+.cr-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #ddd;
+    margin-top: -6px;
+}
+.cr-slider:focus {
+    outline: none;
+}
+/*
+.cr-slider:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+*/
+
+.cr-slider::-moz-range-track {
+    width: 100%;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 0;
+    border-radius: 3px;
+}
+.cr-slider::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #ddd;
+    margin-top: -6px;
+}
+
+/*hide the outline behind the border*/
+.cr-slider:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+.cr-slider::-ms-track {
+    width: 300px;
+    height: 5px;
+    background: transparent;/*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    border-color: transparent;/*leave room for the larger thumb to overflow with a transparent border */
+    border-width: 6px 0;
+    color: transparent;/*remove default tick marks*/
+}
+.cr-slider::-ms-fill-lower {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.cr-slider::-ms-fill-upper {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.cr-slider::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #ddd;
+}
+.cr-slider:focus::-ms-fill-lower {
+    background: rgba(0, 0, 0, 0.5);
+}
+.cr-slider:focus::-ms-fill-upper {
+    background: rgba(0, 0, 0, 0.5);
+}
+/*******************************************/
+
+
+/* Just cross hairs for debugging - can be removed upon release */
+.croppie-container .cr-viewport.debug:before,
+.croppie-container .cr-viewport.debug:after {
+    background: white;
+    width: 1px;
+    height: 1px;
+    content: '';
+    position: absolute;
+}
+.croppie-container .cr-viewport.debug:before {
+	top: 0;
+    height: 100%;
+    left: 50%;
+}
+.croppie-container .cr-viewport.debug:after {
+	top: 50%;
+	left: 0;
+	width: 100%;
+}
+.demoform #orig {
+	margin:0; 
+	max-height:224px; 
+	width:auto; 
+	height:auto;
+	padding:2px; 
+}
+
+.demoform input[type=submit] {
+	padding:5px 10px;
+	font-size:14px;
+	margin:0;
+} 
+.demoform input[type=text], 
+.demoform input[type=number], 
+.demoform textarea,
+.demoform select {
+	padding:3px 8px;
+	margin:0 0 6px 0;
+	background:#fff;
+	display:block;
+	width:100%;
+	border:1px #ccddcc solid;
+	font-size:14px;
+	/*font-family:Verdana, Arial, Helvetica, sans-serif;*/
+	resize:none;
+}
+
+.demoform textarea {
+	resize:none;
+}
+#uploadform textarea {
+	resize:none;
+}
+.demoform select {
+	padding:2px 6px;
+}
+.demoform p {
+	margin:0;
+	padding:0;
+	font-size:14px;
+	font-weight:normal;
+	color:#666;
+}
+.demoform #loading {
+	display:none;
+	font-size:14px;
+	color:#666;
+	padding:0 0 0 40px;
+	margin:0 0 5px 0;
+	line-height:34px;
+	font-weight:bold;
+	background:url(../images/bx_loader.gif) no-repeat left center;
+	
+}
+.demoform #message p, .demoform #message2 p {
+	font-size:14px;
+	color:#cc0000;
+	display:block;
+	padding:0 0 5px 0;
+	margin:0;
+	line-height:130%;
+	font-weight:bold;
+}
+.demoform #upload-res {
+	background:#006600;
+	color:#fff;
+	padding: 8px 15px;
+	border-radius: 0px;
+	border:none;
+	font-size: 14px;
+	cursor: pointer;
+	text-decoration: none;
+	text-align:center;
+	text-shadow: none;
+	width:100%;
+	margin:10px 0 0 0;
+	outline: 0;
+}
+.demoform #upload-res:hover {
+	background:#ffcc00;
+	color:#000;
+	font-weight:bold;
+}
+.demoform .upload {
+	border:1px #ccc solid;
+	width:235px;
+	height:235px;
+	background:none;
+	margin:0;
+	padding:16px;
+	cursor:pointer;
+	position:relative;
+}
+.demoform .upload span {
+	position:absolute;
+	display:block;
+	text-align:center;
+	top:90px;
+	width:200px;
+	color:#b00;
+	font-size:14px;
+	font-weight:600;
+}
+.demoform .upload span.prev {
+	top:auto;
+	bottom:30px;
+	color:#fff;
+	text-shadow:1px 1px 0 #000;
+}
+.demoform .upload img {
+	margin:0 !important;
+	padding:0 !important;
+	max-height:100% !important;
+	max-width:100%!important;
+	display:block !important;
+}
+.demoform .uploadbutton {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:235px;
+	height:235px;
+	cursor:pointer;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+.demoform #diam {
+	margin:0; 
+	padding:0; 
+	width:30px; 
+	height:27px; 
+	position:absolute; 
+	top:0; 
+	right:0; 
+	border:0; 
+	border-left:1px #ddd solid; 
+	background:none; 
+	text-shadow:none; 
+	color:#999; 
+	font-weight:normal;
+}
+.demoform #diam:hover {
+	color:#fff;
+	background:#ccc;
+}
+
+#user_img {
+	width:120px;
+	height:120px;
+}
+.upload {
+	position:relative;
+	border:0px #ccc solid;
+}
+.xuploadbutton {
+	margin:0;
+	padding:0;
+	width:100%;
+}
+.xuploadbutton p {
+	position:absolute;
+	top:0;
+	left:0;
+	cursor:pointer;
+	width:100%;
+	padding:7px 15px;
+	margin:0;
+	background:#006600;
+	background: linear-gradient(to bottom, #339933, #006600);
+	color:#fff;
+	font-weight:normal;
+	text-align:center;
+	overflow:hidden;
+	font-size:13px;
+	border-radius:2px;
+}
+.xuploadbutton p:hover {
+	background:#ffcc00;
+	background: linear-gradient(to bottom, #ffcc00, #cc9900);
+	color:#000;
+	text-decoration:none;
+	box-shadow:inset 0 0 5px rgba(0,0,0,0.2);
+}
+#selectUserImg {
+	position:absolute;
+	top:0;
+	left:0;
+	width:0px;
+	height:0;
+	overflow:hidden;
+	visibility:hidden;
+}
+#uploadname {
+	font-weight:bold;
+}
+#upload-demo {
+	background-size: 140px auto !important;
+	height:180px;
+	width:180px;
+	padding:0;
+	margin:0 0 5px;
+}
+
+
+
+

@@ -1,0 +1,270 @@
+.btn {
+	white-space:nowrap;
+}
+a, .btn, .btn-group {
+	box-shadow:none !important;
+}
+.btn-sm {
+	padding:3px 10px !important;
+}
+.btn-xs {
+	padding:2px 10px !important;
+}
+.btn-xxs {
+	padding:0px 10px !important;
+}
+.btn-fa {
+	padding:2px 8px !important;
+}
+
+.tab-pane h5 {
+	padding:6px 10px;
+}
+.tab-pane div.inner {
+	background:#fff; 
+	padding:5px 5px 0; 
+	border-left:0px #ccc solid;
+	border-right:0px #ccc solid;
+	border-bottom:0px #ccc solid;
+}
+
+.tab-content {
+	border:1px solid #ddd;
+	border-top:0;
+	padding:15px;
+	background:#fff;
+}
+
+.modal-tabs .tab-content {
+	border:0;
+	padding:0;
+}
+
+.modal-tabs .nav-tabs {
+	padding:0 20px;
+}
+.nav-tabs > li > a {
+  margin-right: 2px;
+  border-radius:2px 2px 0 0;
+  background:rgba(0,0,0,0.02);
+  color:#575;
+  font-weight:600 !important;
+  padding:8px 12px;
+}
+
+.tab-content.tab-flex {
+  display: flex;
+}
+
+.tab-content.tab-flex > .tab-pane {
+  display: block; /* undo "display: none;" */
+  visibility: hidden;
+  margin-right: -100%;
+  width: 100%;
+}
+
+.tab-content.tab-flex > .active {
+  visibility: visible;
+}
+
+/* Custom Radio and Input -------------------------------------------------------------------------------------------------*/
+	label {
+		margin:0;
+		cursor: pointer;
+	}
+	label::before {
+			color: white !important;
+			background: green !important;
+	}	
+	input[type="checkbox"].checkbox {
+	  vertical-align: middle;
+	  line-height: 20px;
+	  position: absolute;
+		top:-2px;
+	  z-index: 1;
+	  width: 15px;
+	  height: 15px;
+		background: green !important;
+	}
+	label input[type="checkbox"].checkbox {
+	  position: relative;
+	  z-index: 1;
+	  display: inline-block;
+	  margin: 0;
+	  line-height: 17px;
+	  min-height: 15px;
+	  min-width: 15px;
+	  margin-right: 5px;
+	}
+	input[type="checkbox"].checkbox {
+	  cursor: pointer;
+	}
+	label input[type="checkbox"].checkbox.notxt {
+	  margin-right: 0px;
+	  margin-top: 3px;
+	}
+
+	input[type="radio"].checkbox {
+	  vertical-align: middle;
+	  line-height: 20px;
+	  position: absolute;
+		top:-2px;
+	  z-index: 1;
+	  width: 15px;
+	  height: 15px;
+		background: green !important;
+	}
+	label input[type="radio"].checkbox {
+	  position: relative;
+	  z-index: 1;
+	  display: inline-block;
+	  margin: 0;
+	  line-height: 17px;
+	  min-height: 15px;
+	  min-width: 15px;
+	  margin-right: 5px;
+	}
+	input[type="radio"].checkbox {
+	  cursor: pointer;
+	}
+	label input[type="radio"].checkbox.notxt {
+	  margin-right: 0px;
+	  margin-top: 3px;
+	}
+
+.modal {
+	top:35px;
+}
+.modal-content {
+  background-color: #fff;
+  border: 0 !important;
+  border-radius: 3px;
+}
+
+.modal-header {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  background:#eee;
+}
+.modal-title {
+	font-weight:600;
+	font-size:18px;
+}
+.modal-header .close {
+  padding: 1rem 1rem;
+  margin: -0.6rem -0.5rem -1rem auto;
+}
+.modal-body {
+	padding:15px 20px 20px;
+}
+
+.btn-fl {
+	float:left;
+	margin:0 5px 8px 0;
+}
+.btn-fr {
+	float:right;
+	margin:0 0 8px 5px;
+}
+.btn.btn-fl {
+	float:left;
+	margin-right:5px;
+}
+.btn.btn-fr {
+	float:right;
+	margin-left:5px;
+}
+.btn-danger {
+  color: #fff;
+  background-color: #b00;
+  border-color: #b00;
+	border-radius:2px;
+}
+.btn-danger:hover {
+  color: #000;
+  background-color: #fc0;
+  border-color: #fc0;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #080;
+  border-color: #080;
+	border-radius:2px;
+}
+.btn-primary:hover {
+  color: #000;
+  background-color: #fc0;
+  border-color: #fc0;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #fff;
+  background-color: #080;
+  border-color: #080;
+}
+.btn-primary:not(:disabled):not(.disabled):active, 
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:hover), 
+.show > .btn-primary.dropdown-toggle {
+  color: #fff !important;
+  background-color: #080;
+  border-color: #080;
+}
+
+.btn-default {
+  color: #333;
+	background: linear-gradient(to bottom, #eee, #ddd);
+  border-color: #ccc;
+	border-radius:2px;
+	font-size:12px;
+}
+
+.btn-default:hover {
+  color: #333;
+	background: linear-gradient(to bottom, #ddd, #eee);
+  border-color: #999;
+}
+
+.btn-default.disabled, .btn-default:disabled {
+  color: #fff;
+	background: linear-gradient(to bottom, #eee, #ddd);
+  border-color: #ddd;
+}
+
+.btn-default:not(:disabled):not(.disabled):active, .btn-default:not(:disabled):not(.disabled).active,
+.show > .btn-default.dropdown-toggle {
+  color: #333;
+	background: linear-gradient(to bottom, #eee, #ddd);
+  border-color: #ddd;
+}
+
+.popover {
+	border-radius:2px;
+}
+.popover .popover-header{
+	text-align:center;
+	color:#a00;
+	font-size:16px;
+}
+.popover .popover-body {
+	padding:10px !important;
+}
+.popover .btn {
+	min-width:60px !important;
+	text-align:right !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

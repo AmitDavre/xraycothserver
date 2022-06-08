@@ -1,0 +1,69 @@
+[06-Jan-2021 06:32:40 UTC] PHP Warning:  include(../../dbconnect/db_connect.php): failed to open stream: No such file or directory in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 6
+[06-Jan-2021 06:32:40 UTC] PHP Warning:  include(../../dbconnect/db_connect.php): failed to open stream: No such file or directory in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 6
+[06-Jan-2021 06:32:40 UTC] PHP Warning:  include(): Failed opening '../../dbconnect/db_connect.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 6
+[06-Jan-2021 06:32:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php:10
+Stack trace:
+#0 {main}
+  thrown in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 10
+[06-Jan-2021 06:34:32 UTC] PHP Warning:  include(../../dbconnect/db_connect.php): failed to open stream: No such file or directory in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 6
+[06-Jan-2021 06:34:32 UTC] PHP Warning:  include(../../dbconnect/db_connect.php): failed to open stream: No such file or directory in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 6
+[06-Jan-2021 06:34:32 UTC] PHP Warning:  include(): Failed opening '../../dbconnect/db_connect.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 6
+[06-Jan-2021 06:34:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php:10
+Stack trace:
+#0 {main}
+  thrown in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 10
+[06-Jan-2021 13:52:20 Asia/Bangkok] PHP Warning:  print_r() expects parameter 2 to be bool, array given in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 24
+[06-Jan-2021 19:13:27 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php:10
+Stack trace:
+#0 {main}
+  thrown in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 10
+[06-Jan-2021 19:13:27 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php:10
+Stack trace:
+#0 {main}
+  thrown in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 10
+[06-Jan-2021 19:13:28 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php:10
+Stack trace:
+#0 {main}
+  thrown in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 10
+[06-Jan-2021 19:13:29 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php:10
+Stack trace:
+#0 {main}
+  thrown in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 10
+[06-Jan-2021 19:13:30 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php:10
+Stack trace:
+#0 {main}
+  thrown in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 10
+[06-Apr-2021 19:47:44 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[06-Apr-2021 19:47:45 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[06-Apr-2021 19:47:51 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[06-Apr-2021 19:47:52 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[06-Apr-2021 19:47:54 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[06-Apr-2021 19:47:55 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[06-Apr-2021 19:47:57 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[06-Apr-2021 19:47:58 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[06-Apr-2021 19:48:00 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[06-Apr-2021 19:48:01 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[06-Apr-2021 19:48:10 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[06-Apr-2021 19:48:16 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[06-Apr-2021 19:54:04 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[06-Apr-2021 19:54:05 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[06-Apr-2021 19:56:10 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[07-Apr-2021 11:23:13 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[07-Apr-2021 11:23:15 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[07-Apr-2021 11:23:16 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[07-Apr-2021 11:23:16 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[07-Apr-2021 11:23:21 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[07-Apr-2021 11:23:22 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[07-Apr-2021 11:23:22 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[07-Apr-2021 11:23:24 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[07-Apr-2021 11:23:24 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[07-Apr-2021 11:23:26 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[07-Apr-2021 11:23:26 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[07-Apr-2021 11:23:29 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[07-Apr-2021 11:23:30 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[07-Apr-2021 11:23:30 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[07-Apr-2021 11:25:55 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[07-Apr-2021 11:25:55 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[07-Apr-2021 11:25:57 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[07-Apr-2021 11:25:57 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16
+[07-Apr-2021 11:25:58 Asia/Bangkok] PHP Warning:  Invalid argument supplied for foreach() in /home1/wartiz/public_html/regohr/mob/scanner/ajax/qrCodeAjaxAutoReload.php on line 16

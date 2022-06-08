@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+/*.jhkhkjh {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+table.xheader {
+	border-collapse:collapse;
+	width:100%;
+	margin:10px 0 15px;
+}
+table.xheader td {
+	padding:0;
+	font-size:12px;
+	vertical-align:center;
+	white-space:nowrap;
+	font-weight:normal;
+}
+
+table.wrap {
+	border-collapse:collapse;
+	border:0px solid #ddd;
+	width:100%;
+	margin:6px 0 0px 0;
+	table-layout:fixed;
+}
+
+table.topleft {
+	border-collapse:collapse;
+	border:0;
+	width:100%;
+}
+table.topleft td {
+	padding:5px 8px;
+	vertical-align: baseline;
+	white-space:nowrap;
+	line-height:140%;
+	text-align:left;
+}
+
+table.month_table {
+	border-collapse:collapse;
+	width:100%;
+	table-layout:auto;
+}
+table.month_table td {
+	padding:5px;
+	vertical-align: baseline;
+	white-space:nowrap;
+	font-weight:normal;
+	line-height:140%;
+	text-align:left;
+}
+table.month_table td span {
+	font-weight:normal;
+}
+table.subtable {
+	width:100%; 
+	table-layout:fixed;
+}
+table.subtable td {
+	padding:5px;
+}
+*/	
+	
+table.formTable.taxtable {
+	border-collapse:collapse;
+	border:1px #000 solid;
+	width:100%;
+	line-height:140%;
+}
+table.formTable.taxtable th, table.taxtable td {
+	border:1px solid #000;
+	padding:5px 8px;
+	line-height:140%;
+	color:#111;
+	font-family: inherit;
+	vertical-align:middle;
+	text-align:center;
+	font-size:12px;
+	white-space:nowrap;
+	font-weight:normal;
+}
+table.formTable.taxtable td {
+	text-align:center;
+	line-height:140%;
+	vertical-align:bottom;
+}
+table.formTable.taxtable th {
+	background:#eee;
+}
+table.formTable.taxtable td.amt {
+	vertical-align:baseline;
+	text-align:right;
+}
+		
+table.formTable input[type=text] {
+	padding:0;
+	margin:0;
+	border:0;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display:inline-block;
+}
+table.formTable input[type=text]:hover {
+	border:0;
+	background:#ffa
+}
+table.formTable input[type=text].ro {
+	background:transparent;
+	font-weight:bold;
+	border:0;
+}
+table.formTable input[type=text].calc1 {
+	text-align:right;
+	padding:0 5px;
+	width:80px;
+	border:0;
+}
+table.formTable input[type=text].calc2 {
+	text-align:right;
+	padding:0 5px;
+	width:100px;
+	border:0;
+}
+		
+table.formTable.toptable {
+	width:100%;
+	border-collapse:collapse;
+	table-layout:auto;
+	border:1px solid #000;
+}
+table.formTable.toptable td {
+	text-align:left;
+	padding:5px 8px;
+	vertical-align:baseline;
+}
+		
+table.formTable.toptable2 {
+	width:100%;
+	border-collapse:collapse;
+	table-layout:auto;
+	border:1px solid #000;
+	border-bottom:0;
+}
+table.formTable.toptable2 td {
+	text-align:left;
+	padding:5px 8px;
+	vertical-align:baseline;
+}
+table.formTable.toptable2 td table {
+	border-collapse:collapse;
+	width:100%;
+	font-size:12px;
+	line-height:120%;
+}
+table.formTable.toptable2 td table td p {
+	font-size:11px;
+	margin:0;
+	padding:0 0 0 22px;
+}
+table.formTable.toptable2 td table td i {
+	font-size:11px;
+	margin:0;
+	font-style:normal;
+}
+table.formTable.toptable2 td table td span {
+	font-weight:normal;
+}
+
+div.field {
+	position:absolute;
+	min-height:12px;
+	border:0px solid red;
+	font-size:15px;
+	line-height:100%;
+	white-space:nowrap;
+	color:#069;
+}
+div.field13, div.field13n, div.field13c, div.field11, div.field12 {
+	position:absolute;
+	min-height:12px;
+	border:0px solid red;
+	font-size:14px;
+	line-height:100%;
+	white-space:nowrap;
+	color:#069;
+}
+div.field13n {
+	width:100px;
+	text-align:right;
+}
+div.field13c {
+	width:192px;
+	text-align:center;
+}
+div.field11 {
+	min-width:20px;
+	font-size:11px;
+}
+div.field12 {
+	min-width:20px;
+	font-size:12px;
+}
+label input[type="radio"].radiobox + span:before,
+label input[type="checkbox"].checkbox + span:before {
+  font-size: 11px;
+  height: 11px;
+  line-height: 12px;
+  min-width: 12px;
+  margin-right: 5px;
+  margin-top: 1px;
+  padding-top:1px; 
+}
+.A4form input[type=text] {
+	padding:0;
+	margin:0;
+	border:0;
+	background:transparent;
+	xbackground:red;
+	width:12px;
+	/*-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;*/
+}
+.A4form input[type=text]:hover {
+	background:transparent;
+	background: rgba(255,255,0,0.2);
+}
+.A4form input[type=text].ro {
+	background:transparent;
+	font-weight:bold;
+}
+.A4form input[type=text].calc1 {
+	text-align:right;
+	padding:0 5px;
+	width:70px;
+}
+.A4form input[type=text].calc2 {
+	text-align:right;
+	padding:0 5px;
+	width:112px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

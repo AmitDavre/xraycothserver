@@ -1,0 +1,99 @@
+.croppie-container .cr-image {
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform-origin: 0 0;
+}
+
+.croppie-container .cr-boundary {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+.croppie-container .cr-viewport {
+	position: absolute;
+	border: 1px solid #fff;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	box-shadow:0 0 0 1000px rgba(0, 0, 0, 0.2);
+	z-index: 0;
+}
+.croppie-container .cr-vp-circle {
+	border-radius: 50%;
+}
+.croppie-container .cr-overlay {
+	z-index: 1;
+	position: absolute;
+	cursor: move;
+}
+.croppie-container .cr-slider-wrap {
+	width: 75%;
+	margin: 0 auto;
+	margin-top: 25px;
+	text-align: center;
+	margin:0;
+	display:none;
+	width:0;
+	height:0;
+}
+.croppie-result {
+	position: relative; 
+	overflow: hidden;
+}
+.croppie-result img {
+	position: absolute;
+}
+
+/* Just cross hairs for debugging - can be removed upon release */
+.croppie-container .cr-viewport.debug:before,
+.croppie-container .cr-viewport.debug:after {
+    background: white;
+    width: 1px;
+    height: 1px;
+    content: '';
+    position: absolute;
+}
+.croppie-container .cr-viewport.debug:before {
+	top: 0;
+    height: 100%;
+    left: 50%;
+}
+.croppie-container .cr-viewport.debug:after {
+	top: 50%;
+	left: 0;
+	width: 100%;
+}
+
+#selectUserImg {
+	position:absolute;
+	top:0;
+	left:0;
+	width:0px;
+	height:0;
+	overflow:hidden;
+	visibility:hidden;
+}
+#uploadname {
+	font-weight:bold;
+}
+.croppie-container {
+	padding:0;
+	margin:0;
+	background:url(../images/profile_image.jpg) no-repeat center center;
+	background-size: 150px auto !important;
+}
+#upload-demo {
+	background-size: 150px auto !important;
+	height:180px;
+	width:180px;
+}
+
+
+
+

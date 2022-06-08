@@ -1,0 +1,59 @@
+
+.header-client {
+	color:#06c;
+	text-shadow:1px 1px #fff;
+}
+h2 {
+	color:#06c;
+}
+h2 small {
+	color:#06c;
+}
+.header-date {
+	text-shadow:1px 1px #fff;
+}
+.topnav-custom .btn-group:hover, .topnav-custom .btn-group.active {
+	background:#07c;
+}
+.topnav-custom .btn-group .dropdown-menu a:hover {
+	background:#38d;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #07c;
+  border-color: #07c;
+	border-radius:2px;
+}
+.btn-primary:hover {
+  color: #000;
+  background-color: #fc0;
+  border-color: #fc0;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #fff;
+  background-color: #07c;
+  border-color: #07c;
+}
+.btn-primary:not(:disabled):not(.disabled):active, 
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:hover), 
+.show > .btn-primary.dropdown-toggle {
+  color: #fff !important;
+  background-color: #07c;
+  border-color: #07c;
+}
+.mnSumoSelect.open .search-txt {
+	background-color: #07c !important;
+}
+.mnSumoSelect > .CaptionCont:hover { 
+	background-color: #07c !important;
+}
+
+
+
+
+
+
+
+
+

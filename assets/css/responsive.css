@@ -1,0 +1,86 @@
+
+.terms-content {
+	padding:15px;
+}
+.show-xxs {
+	display:none;
+}
+.show-1000 {
+	display:none;
+}
+.show-800 {
+	display:none;
+}
+.show-600 {
+	display:none;
+}
+.tab-content-left {
+	float:left;
+	width:50%;
+	padding-right:10px;
+	xbackground:orange;
+	min-height:200px;
+	height:100%;
+	border-right:1px solid #eee;
+}
+.tab-content-right, 
+.tab-content-right-benefits {
+	float:right;
+	width:50%;
+	padding-left:10px;
+	xbackground:green;
+	min-height:200px;
+	height:100%;
+}
+.show-md-row {
+	display:none;
+}
+.show-md {
+	display:none;
+}
+
+.tab-pane {
+	overflow-x: hidden;
+	overflow-y:auto;
+	height:100%;
+}
+
+.tab-content #submitBtn {
+	position:absolute;
+	right:16px;
+	top:15px;
+}
+.xxxemployee-profile-submit {
+	position:absolute;
+	right:16px;
+	top:15px;
+}
+.employee-profile-submit #submitBtn {
+	float:right;
+}
+.holidays-list .btn {
+	float:right;
+	margin:0 0 8px 8px;
+}
+.holidays-list #selYear {
+	float:left;
+	margin:0 8px 8px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

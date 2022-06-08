@@ -1,0 +1,388 @@
+	
+	.header {
+		z-index: 99;
+		width: 100%;
+		margin: 0;
+		border: 0;
+		padding: 0 5px 0 15px;
+		filter: none;
+		position: fixed;
+		right: 0px;
+		left: 0px;
+		top: 0px;
+		height: 50px;
+		font-size:18px; 
+		font-weight:600; 
+		color:#fff;
+	}
+	.dashboard_header {
+		background: rgba(0,0,0,0.3);
+		background:#333;
+		box-shadow:0 0 10px rgba(0,0,0,0.5);
+		line-height:50px;
+		text-align:center;
+	}
+	.page_header {
+		background: linear-gradient(to bottom, #333, #000);
+	}
+	.page_header i.fa-home {
+		color:#fff;
+		font-size:34px;
+		line-height:50px;
+	}
+	.page_header i.fa-backward {
+		color:#fff;
+		font-size:30px;
+		line-height:50px;
+	}
+	.page_header div {
+		line-height:50px;
+		float:left;
+	}
+	.page_header a {
+		float:right;
+		padding:0 10px;
+	}
+	
+	.dashboard img.picture {
+		width:180px; 
+		height:180px; 
+		border-radius:50%; 
+		padding:7px; 
+		background:rgba(255,255,255,0.3);
+		background:#d00;
+		margin:0 auto;
+		display:block;
+	}
+	.dashboard img.lang {
+		height:32px; 
+		padding:0; 
+		margin:-10px 0 0 10px;
+		display:block;
+		float:left;
+	}
+	.dashboard p {
+		margin:0;
+		font-size:14px;
+		color:#000;
+	}
+	a.logout {
+		position:absolute; 
+		right:10px; 
+		top:60px; 
+		color:#fff; 
+		background:rgba(0,0,0,0.2); 
+		padding:0px 13px 0px 15px;
+		font-size:32px;
+	}
+	a.logout:hover {
+		background:rgba(0,0,0,0.5); 
+	}
+
+	.payslipTable {
+		width:100%;
+	}
+	.payslipTable thead th {
+		padding:5px 10px;
+		white-space:nowrap;
+		text-align:left;
+		color:#fff;
+		background:#444;
+		font-weight:400;
+	}
+	.payslipTable.wrapnormal thead th {
+		white-space:normal;
+		line-height:120%;
+	}
+	.payslipTable tbody th {
+		padding:3px 10px;
+		white-space:nowrap;
+		text-align:right;
+	}
+	.payslipTable tbody tr.blank {
+		background:#fff !important;
+	}
+	.payslipTable tbody tr.footer {
+		background:#a00 !important;
+		color:#fff;
+	}
+	.payslipTable tbody tr.bold {
+		background:#800 !important;
+		color:#fff;
+		font-weight:600;
+	}
+	.payslipTable tfoot tr {
+		background:#800 !important;
+		color:#fff;
+		font-weight:600;
+	}
+	.payslipTable tbody td, 
+	.payslipTable tfoot td {
+		padding:3px 10px;
+	}
+	.payslipTable.tdRight tbody td {
+		text-align:right;
+	}
+	
+	.tal {
+		text-align:left !important;
+	}
+	.tac {
+		text-align:center !important;
+	}
+	.tar {
+		text-align:right !important;
+	}
+	.nopad {
+		padding:0 !important;
+	}
+	.pad1 {
+		padding:1px !important;
+	}
+	.pad2 {
+		padding:2px !important;
+	}
+
+	
+	.balanceTable {
+		width:100%;
+	}
+	.balanceTable tr {
+		border-bottom:1px solid #ddd;
+	}
+	.balanceTable tbody tr:last-child {
+		border-bottom:0;
+	}
+	.balanceTable thead th {
+		padding:5px 10px;
+		white-space:nowrap;
+		text-align:left;
+		font-weight:500;
+		border-right:1px solid #ddd;
+		background:#eee;
+	}
+	.balanceTable tbody td {
+		padding:5px 10px;
+		border-right:1px solid #ddd;
+	}
+	.balanceTable thead th:last-child,
+	.balanceTable tbody td:last-child {
+		border-right:0;
+	}
+	
+	.listTable {
+		width:100%;
+	}
+	.listTable tbody th {
+		padding:5px 10px;
+		white-space:nowrap;
+		text-align:right;
+	}
+	.listTable tbody td {
+		padding:5px 10px;
+	}
+	.listTable.tdRight tbody td {
+		text-align:right;
+	}
+
+	.bg-dashboard {
+		background: linear-gradient(to bottom, #fff, #ddd) fixed;
+	}
+	
+	.mobbox {
+		width:50%; 
+		padding:3px
+	}
+	.mobbox.fll {
+		float:left; 
+	}
+	.mobbox.flr {
+		float:right; 
+	}
+	.mobbox .inner {
+		background:rgba(0,0,0,0.3);
+		background:#0066CC;
+		padding:10px 0; 
+		border:1px solid rgba(255,255,255,0.4);
+		text-align:center;
+		cursor:pointer;
+	}
+	.mobbox .inner p {
+		padding:0;
+		margin:0; 
+		cursor:pointer;
+		font-size:16px;
+		background:transparent;
+	}
+	.mobbox .inner .fa {
+		font-size:30px;
+	}
+	.mobbox .inner:hover {
+		background:rgba(0,0,0,0.5); 
+		border:1px solid rgba(255,255,255,0.6);
+	}
+	.mobbox.contact {
+		width:100%;
+		clear:both;
+	}
+	.mobbox.contact .inner .fa {
+		font-size:18px;
+	}
+	
+	#accordion {
+		border:0;
+	}
+	#accordion .card-header {
+		background: linear-gradient(to bottom, #399, #066) !important;
+		border-radius:0;
+		padding:1px 20px;
+		cursor:pointer;
+		border:0;
+		color:#fff;
+	}
+	#accordion h5 {
+		color:#fff;
+		font-size:18px;
+		font-weight:400;
+	}
+	#accordion .card-body {
+		background:#fff;
+		padding:0px !important;
+		border:0;
+	}
+	.card {
+		margin-bottom:2px;
+		border:0;
+	}
+	.card .collapse { 
+		border:0 !important;
+		background:transparent
+	}
+	
+	.xcard .xcard-header a {
+	  text-decoration:none;
+	  font-size:18px;
+	  font-weight:400;
+	  color:#fff;
+	  display:block;
+	  line-height:40px;
+	  padding:0 10px;
+	  background: #399;
+	  background-image:linear-gradient(#399, #066);
+	}
+	
+	.xcard .card-header a:hover {
+		text-decoration: none;
+		background-image:linear-gradient(#fff, #bbb);
+		background: #093;
+	}
+	* {
+		outline:none;
+	}
+		
+	form label {
+		display:block;
+		padding:0 0 0 2px;
+		margin:0;
+		font-weight:400;
+		font-size:15px;
+		color:#000;
+	}
+	form input[type=text], 
+	form input[type=password], 
+	form td select, 
+	form textarea {
+		width:100%;
+		padding:8px 12px;
+		border:1px #ddd solid;
+		margin:3px 0 10px;
+		line-height:normal;
+		box-sizing: border-box;
+		font-size:15px;
+	}
+	form input[type=text]:hover, 
+	form input[type=password]:hover, 
+	form textarea:hover {
+		background:#fff !important;
+	}
+	form input[type=text]:focus, 
+	form input[type=password]:focus, 
+	form textarea:focus, 
+	form select:hover {
+		background:#fff !important;
+	}
+	form textarea {
+		width:100%;
+		resize: vertical;
+		padding:8px 12px;
+		margin:3px 0 10px;
+		line-height:normal;
+		box-sizing: border-box;
+		background:#fff !important;
+	}
+		
+	.btn {
+		line-height:44px !important;
+		height:44px !important;
+		font-size:18px;
+		xtext-transform:uppercase;
+		text-align:left;
+		border-radius:0px;
+		font-weight:400;
+		color:#fff !important;
+		padding:0 20px;
+	}
+	.xbtn i {
+		float:right;
+		line-height:46px;
+	}
+	
+	h2 {
+		background:#900;
+		color:#fff;
+		text-align:center;
+		padding:8px;
+		margin-bottom:1px;
+	}
+	
+	.list-group .myList  {
+		padding:10px 15px;
+		font-size:18px;
+		cursor:pointer;
+		font-weight:500;
+	}
+	.list-group-item {
+		padding:8px 15px !important;
+		text-align:center;
+	}
+	a.myList:hover {
+		background: #ff6 !important;
+	}
+	.list-group a {
+		font-size:15px !important;
+	}
+	
+	.btn-small {
+		padding:0 10px;
+		margin:0;
+		background: #006699;
+		color:#fff;
+		border:0;
+		font-size:16px;
+		line-height:40px;
+		text-align:center;
+		width:100%;
+		display:block;
+		cursor:pointer;
+	}
+	* {
+		outline:none !important;
+	}
+	
+	.bootstrap-timepicker-widget.dropdown-menu {
+		 z-index: 99999!important;
+	}	
+	
+	
+
+
