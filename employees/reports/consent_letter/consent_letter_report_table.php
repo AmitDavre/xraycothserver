@@ -502,7 +502,7 @@ if ($result_from_consent_letter = $dbc->query($sql_get_from_consent_letter)) {
 			}
 
 			var la = $('#show_lang_field').val();
-			window.open('consent_letter/view_consent_letter.php?id=' + id + '&d=' + d + '&w=' + w + '&l=' + l + '&r=' + r + '&la=' + la, '_blank');
+			// window.open('consent_letter/view_consent_letter.php?id=' + id + '&d=' + d + '&w=' + w + '&l=' + l + '&r=' + r + '&la=' + la, '_blank');
 
 
 			var field1 = $('#field1').val();
@@ -559,7 +559,7 @@ if ($result_from_consent_letter = $dbc->query($sql_get_from_consent_letter)) {
 
 				},
 				success: function(result) {
-					// window.open('consent_letter/view_consent_letter.php?id=' + id + '&d=' + d + '&w=' + w + '&l=' + l + '&r=' + r + '&la=' + la, '_blank');
+					window.open('consent_letter/view_consent_letter.php?id=' + id + '&d=' + d + '&w=' + w + '&l=' + l + '&r=' + r + '&la=' + la + '&f1=' + f1 + '&f2=' + f2 + '&f3=' + f3 + '&f4=' + f4 + '&f5=' + f5, '_blank');
 				},
 			});
 

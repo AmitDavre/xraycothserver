@@ -23,10 +23,28 @@
 		if($row_employee_data = $result_get_employee_data->fetch_assoc()){
 
 			$emp_en_name = $row_employee_data['en_name'];
+			$emp_first_name = $row_employee_data['firstname'];
+			$emp_last_name = $row_employee_data['lastname'];
 			$emp_title = $row_employee_data['title'];
 			$emp_entity = $row_employee_data['entity'];
+
+			$emp_full_name= $emp_first_name.' '. $emp_last_name;
 		}
 	}	
+
+	$sql_get_sys_settings = "SELECT * FROM ".$cid."_sys_settings WHERE id = '1' ";
+
+	if($result_get_sys_settings = $dbc->query($sql_get_sys_settings)){
+		if($row_sys_settings = $result_get_sys_settings->fetch_assoc()){
+
+			$custom_c_company = $row_sys_settings['c_company_temp'];
+			$custom_c_address = $row_sys_settings['c_address_temp'];
+			$custom_c_function = $row_sys_settings['c_function_temp'];
+			$custom_c_telephone = $row_sys_settings['c_telephone_temp'];
+			$custom_c_email = $row_sys_settings['c_email_temp'];
+		}
+	}	
+
 
 
 	$sql3244 = "SELECT * FROM rego_consent_letter ";
@@ -79,6 +97,31 @@
 		$c_email = $c_email_th;
 	}
 
+
+	// OVERWRITE IF CUSTOM FIELDS FILLED
+	
+	if($_GET['f1'] == '1')
+	{
+		$c_company= $custom_c_company;
+	}
+	if($_GET['f2'] == '1')
+	{
+		$c_address= $custom_c_address;
+	}
+	if($_GET['f3'] == '1')
+	{
+		$c_function= $custom_c_function;
+	}
+	if($_GET['f4'] == '1')
+	{
+		$c_telephone= $custom_c_telephone;
+	}
+
+	if($_GET['f5'] == '1')
+	{
+		$c_email= $custom_c_email;
+	}
+
 	// get the selected employee information 
 
 	
@@ -86,9 +129,20 @@
 
 	$datevalue = date('d-m-Y');
 	// block1
-	$text1 = str_replace('<b>{EMPLOYEE_NAME}</b>', '<b>'.$emp_en_name.'</b>', $block1);
-	$text1 = str_replace('<b>{COMPANY_NAME}</b>', '<b>'.$en_compname.'</b>', $text1);
-	$text1 = str_replace('<b>{GENDER_VALUE}</b>', '<b>'.$title[$emp_title].'</b>', $text1);
+
+	if($langvalue == 'th')
+	{
+		$text1 = str_replace('<b>{EMPLOYEE_NAME}</b>', '<b>' . $emp_full_name . '</b>', $block1);
+		$text1 = str_replace('<b>{COMPANY_NAME}</b>', '<b>' . $en_compname . '</b>', $text1);
+		$text1 = str_replace('<b>{GENDER_VALUE}</b>', '<b>' . $title[$emp_title] . '</b>', $text1);
+	}
+	else if($langvalue == 'en')
+	{
+		$text1 = str_replace('<b>{EMPLOYEE_NAME}</b>', '<b>' . $emp_en_name . '</b>', $block1);
+		$text1 = str_replace('<b>{COMPANY_NAME}</b>', '<b>' . $en_compname . '</b>', $text1);
+		$text1 = str_replace('<b>{GENDER_VALUE}</b>', '<b>' . $title[$emp_title] . '</b>', $text1);
+	}
+	
 
 
 
