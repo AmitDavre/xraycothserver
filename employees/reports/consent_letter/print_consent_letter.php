@@ -64,6 +64,7 @@
 
 			$logoimage = $rosaddsw4['logofile'];
 			$en_compname = $rosaddsw4['en_compname'];
+			$th_compname = $rosaddsw4['th_compname'];
 			$website_status = $rosaddsw4['website_status'];
 			$website_name = 'https://www.'.$rosaddsw4['website_name'];
 			$contact_info_status = $rosaddsw4['contact_info_status'];
@@ -133,7 +134,7 @@
 	if($langvalue == 'th')
 	{
 		$text1 = str_replace('<b>{EMPLOYEE_NAME}</b>', '<b>' . $emp_full_name . '</b>', $block1);
-		$text1 = str_replace('<b>{COMPANY_NAME}</b>', '<b>' . $en_compname . '</b>', $text1);
+		$text1 = str_replace('<b>{COMPANY_NAME}</b>', '<b>' . $th_compname . '</b>', $text1);
 		$text1 = str_replace('<b>{GENDER_VALUE}</b>', '<b>' . $title[$emp_title] . '</b>', $text1);
 	}
 	else if($langvalue == 'en')
@@ -319,6 +320,13 @@
 		{
 			$text3 = str_replace('<div style="text-align: justify; margin-left: 25px;">อีเมล์ :  <span id="restrict25"><b></b></span></div>', ' ', $text3);
 		}
+	}
+
+
+	if ($langvalue == 'th') {
+		$text3 = str_replace('<b>{EMPLOYEE_NAME}</b>', '<b>' . $emp_full_name . '</b>', $text3);
+	} else if ($langvalue == 'en') {
+		$text3 = str_replace('<b>{EMPLOYEE_NAME}</b>', '<b>' . $emp_en_name . '</b>', $text3);
 	}
 
 

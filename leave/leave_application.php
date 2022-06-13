@@ -634,7 +634,7 @@
 	<!-- Modal modalLeaveBalance -->
 	<div class="modal fade" id="modalLeaveBalance" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document">
-			<div class="modal-content">
+			<div class="modal-content" style="width: 526px;">
 				<div class="modal-header">
 					<h5 class="modal-title"><i class="fa fa-balance-scale"></i>&nbsp; <?=$lng['Leave balance']?> <span id="memp_id"></span></h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">

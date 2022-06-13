@@ -347,7 +347,7 @@
 				}
 				$bal = $v['maxdays'] - $v['used'] - $v['pending'];
 
-				$balss = round($v['maxdays'],1) - (number_format($v['used'],2) + number_format($v['pending'],2) );
+				$balss = round($v['maxdays'],2) - (number_format($v['used'],2) + number_format($v['pending'],2) );
 
 				$userformat= number_format($v['used'],2) ;
 
@@ -405,7 +405,7 @@
 
 				$table .= '<tr>
 						<td style="width:70%;">'.$v[$_SESSION['rego']['lang']].' ('.$newkey.')</td>
-						<td class="tac paddingclass">'.round($v['maxdays'],1).'</td>
+						<td class="tac paddingclass">'.round($v['maxdays'],2).'</td>
 						<td class="tac paddingclass';
 						if($v['used'] != '0'){$table .= 'strong';}
 						$table .= '">'.$usedFormatVal.'</td>
