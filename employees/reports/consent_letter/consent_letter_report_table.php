@@ -268,7 +268,7 @@ if ($result_from_consent_letter = $dbc->query($sql_get_from_consent_letter)) {
 							<tr>
 								<td>Language</td>
 								<td class="nopad">
-									<select class="options" name="show_lang_field" id="show_lang_field" style="width:100%; border:0">
+									<select onchange=show_lang_field_on_change(); class="options" name="show_lang_field" id="show_lang_field" style="width:100%; border:0">
 										<option value="la4">English</option>
 										<option value="la5">Thai</option>
 									</select>
@@ -302,13 +302,13 @@ if ($result_from_consent_letter = $dbc->query($sql_get_from_consent_letter)) {
 							<tr class="displaynonetr" style="display: none;">
 								<td>Company</td>
 								<td>
-									<input name="field1" id="field1" type="text" value="" class=" " placeholder="..." />
+									<input style="width: 100%;" name="field1" id="field1" type="text" value="" class=" " placeholder="..." />
 								</td>
 							</tr>
 							<tr class="displaynonetr" style="display: none;">
 								<td>Address</td>
 								<td>
-									<input name="field2" id="field2" type="text" value="" class=" " placeholder="..." />
+									<input style="width: 100%;" name="field2" id="field2" type="text" value="" class=" " placeholder="..." />
 								</td>
 							</tr>
 							<tr class="displaynonetr" style="display: none;">
@@ -326,7 +326,7 @@ if ($result_from_consent_letter = $dbc->query($sql_get_from_consent_letter)) {
 							<tr class="displaynonetr" style="display: none;">
 								<td>Email</td>
 								<td>
-									<input name="field5" id="field5" type="text" value="" class=" " placeholder="..." />
+									<input style="width: 100%;" name="field5" id="field5" type="text" value="" class=" " placeholder="..." />
 								</td>
 							</tr>
 						</tbody>
@@ -716,5 +716,90 @@ if ($result_from_consent_letter = $dbc->query($sql_get_from_consent_letter)) {
 
 			$('.displaynonetr').css('display', 'none');
 		}
+	});
+
+	function show_lang_field_on_change() {
+
+		var show_lang_field = $('#show_lang_field').val();
+
+		// run ajax and fetch according to lang from entites data 
+
+		$.ajax({
+			url: "consent_letter/ajax/get_entities_data_using_lang.php",
+			type: "POST",
+			data: {
+				show_lang_field: show_lang_field
+			},
+			success: function(response) {
+
+				var data = JSON.parse(response);
+
+
+				if (response != 'false') {
+
+					var show_lang_field_value = $('#show_lang_field').val();
+
+					if (show_lang_field_value == 'la4') { //eng
+
+						$('#field1').val(data.c_company);
+						$('#field2').val(data.c_address);
+						$('#field3').val(data.c_function);
+						$('#field4').val(data.c_telephone);
+						$('#field5').val(data.c_email);
+					} else {
+						$('#field1').val(data.c_company_th);
+						$('#field2').val(data.c_address_th);
+						$('#field3').val(data.c_function_th);
+						$('#field4').val(data.c_telephone_th);
+						$('#field5').val(data.c_email_th);
+					}
+
+				}
+			}
+		});
+
+
+
+	}
+
+
+	$(document).ready(function() {
+		var show_lang_field = $('#show_lang_field').val();
+
+		// run ajax and fetch according to lang from entites data 
+
+		$.ajax({
+			url: "consent_letter/ajax/get_entities_data_using_lang.php",
+			type: "POST",
+			data: {
+				show_lang_field: show_lang_field
+			},
+			success: function(response) {
+
+				var data = JSON.parse(response);
+
+
+				if (response != 'false') {
+
+					var show_lang_field_value = $('#show_lang_field').val();
+
+					if (show_lang_field_value == 'la4') { //eng
+
+						$('#field1').val(data.c_company);
+						$('#field2').val(data.c_address);
+						$('#field3').val(data.c_function);
+						$('#field4').val(data.c_telephone);
+						$('#field5').val(data.c_email);
+					} else {
+						$('#field1').val(data.c_company_th);
+						$('#field2').val(data.c_address_th);
+						$('#field3').val(data.c_function_th);
+						$('#field4').val(data.c_telephone_th);
+						$('#field5').val(data.c_email_th);
+					}
+
+				}
+			}
+		});
 	});
 </script>
