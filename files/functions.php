@@ -587,6 +587,17 @@
 		return $data;
 	}
 
+
+	function convertetYears($yearvalue,$lang)
+	{
+		if ($lang == 'en') {
+			$newyear = (int)$yearvalue;
+		} else {
+			$newyear = (int)$yearvalue + 543;
+		}
+		return $newyear;
+	}
+
 	function getCustomers($access){
 		global $dbx;
 		$data = array();

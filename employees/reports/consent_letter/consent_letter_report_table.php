@@ -219,7 +219,7 @@ if ($result_from_consent_letter = $dbc->query($sql_get_from_consent_letter)) {
 
 				</td> -->
 			<td>
-				<button id="print_all_consent_letter" type="button" class="btn btn-primary"><i class="fa fa-print"></i>&nbsp; <?= $lng['Print consent letter'] ?></button>
+				<button id="print_all_consent_letter" type="button" class="btn btn-primary"><i class="fa fa-print"></i>&nbsp; <?= $lng['Print all consent letters'] ?></button>
 			</td>
 		</tr>
 	</table>

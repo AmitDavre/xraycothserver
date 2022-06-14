@@ -36,12 +36,12 @@
 		
 	}
 
-			// echo '<pre>';
+		// echo '<pre>';
 		// print_r($_SESSION);
 		// echo '</pre>';
 
 		// die();
-	
+
 ?>
 
 <!DOCTYPE html>

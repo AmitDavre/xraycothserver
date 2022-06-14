@@ -199,8 +199,19 @@
 	}
 	else 
 	{
-		// show date 
-		$text3 = str_replace('<b>{DATE_VALUE}</b>', '<b>'.$_GET['d'].'</b>', $text3);
+	// show date 
+
+			$dateSelected = $_GET['d'];
+			$explodedDate = explode('-',$_GET['d']);
+
+			$newyearValue = convertetYears($explodedDate['2'], $langvalue);
+
+
+			$newYearValueWithThaiYear = $explodedDate['0'].'-'.$explodedDate['1'].'-'.$newyearValue;
+		
+
+
+		$text3 = str_replace('<b>{DATE_VALUE}</b>', '<b>'. $newYearValueWithThaiYear.'</b>', $text3);
 	}
 	
 

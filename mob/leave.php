@@ -724,7 +724,7 @@
 
 	  // var days = 2;
 
-	  console.log(result);
+	//   console.log(result);
 	  
 	  return result;
 
@@ -917,7 +917,7 @@
 
 		var afterbefore = addDays2(leave_type);
 
-		console.log(afterbefore[0]);
+		// console.log(afterbefore[0]);
 		console.log(afterbefore[1]);
 
 		if(afterbefore[0] == 'donotsetmaxdatevalue' && afterbefore[1] != 'both') 

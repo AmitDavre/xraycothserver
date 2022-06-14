@@ -406,13 +406,18 @@
 
 
 			}
-		}	
+		}
 
 	// ======================= UPDATED CONSENT DATA ============================// 
 
 
+
+	// $years_valuesss = getYears();
+
+
+
 		// echo '<pre>';
-		// print_r($_SESSION);
+		// print_r($years_valuesss);
 		// echo '</pre>';
 
 		// die();
