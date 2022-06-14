@@ -951,7 +951,7 @@
 								<td><a href="#" data-id="att_housebook" class="<?=$delDoc?>"><i class="fa fa-trash fa-lg"></i></a></td>
 							</tr>	
 							<tr>
-								<th><?=$lng['Additional file']?></th>
+								<th><?=$lng['Consent Letter']?></th>
 								<td id="attach1_name" style="color:#999; font-style:italic"><?=$data['attach1']?></td>
 								<td><a href="#" onClick="$('#attach1').click();"><i class="fa fa-upload fa-lg"></i></a></td>
 								<td class="tac"><?=$attach1?></td>

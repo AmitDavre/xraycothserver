@@ -344,6 +344,8 @@
 	$html .= $text1;
 	$html .= $block2;
 	if ($langvalue == 'en') {
+	$html .= '<pagebreak>';
+
 	 $html .= $imgfile;
 	
 	}

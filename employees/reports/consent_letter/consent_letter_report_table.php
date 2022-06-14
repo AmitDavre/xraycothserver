@@ -241,7 +241,7 @@ if ($result_from_consent_letter = $dbc->query($sql_get_from_consent_letter)) {
 								<th><?= $lng['Department'] ?></th>
 								<th><?= $lng['Position'] ?></th>
 								<th><i class="fa fa-print fa-lg"></i></th>
-								<th><i class="fa fa-eye fa-lg"></i></th>
+								<!-- <th><i class="fa fa-eye fa-lg"></i></th> -->
 								<th><i class="fa fa-trash fa-lg"></i></th>
 							</tr>
 						</thead>
@@ -438,41 +438,6 @@ if ($result_from_consent_letter = $dbc->query($sql_get_from_consent_letter)) {
 
 
 		$(document).on("click", ".empPrint", function(e) {
-			var id = $(this).data('id');
-
-			var d = $('#show_date_field').val();
-
-			if ($('input[name="show_website_info"]').is(':checked')) {
-				// checked
-				var w = '1';
-			} else {
-				// unchecked
-				var w = '0';
-			}
-
-			if ($('input[name="show_logo"]').is(':checked')) {
-				// checked
-				var l = '1';
-			} else {
-				// unchecked
-				var l = '0';
-			}
-
-			if ($('input[name="show_representative"]').is(':checked')) {
-				// checked
-				var r = '1';
-			} else {
-				// unchecked
-				var r = '0';
-			}
-
-			var la = $('#show_lang_field').val();
-
-			window.open('consent_letter/print_consent_letter.php?id=' + id + '&d=' + d + '&w=' + w + '&l=' + l + '&r=' + r + '&la=' + la, '_blank');
-			//alert(id);
-		})
-
-		$(document).on("click", ".empView", function(e) {
 			var id = $(this).data('id');
 
 			var d = $('#show_date_field').val();

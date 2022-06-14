@@ -40,7 +40,7 @@
 	$columns[] = array( 'db' => 'position', 'dt' => $nr, 'formatter' => function($d, $row )use($positions){return $positions[$d][$_SESSION['rego']['lang']];}); $nr++;
 
 	$columns[] = array( 'db' => 'emp_id', 'dt' => $nr, 'formatter' => function($d, $row ){return '<a class="empPrint" data-id="'.$d.'"><i class="fa fa-print fa-lg"></i></a>';}); $nr++;
-	$columns[] = array( 'db' => 'emp_id', 'dt' => $nr, 'formatter' => function($d, $row ){return '<a class="empView" data-id="'.$d.'"><i class="fa fa-eye fa-lg"></i></a>';}); $nr++;
+	// $columns[] = array( 'db' => 'emp_id', 'dt' => $nr, 'formatter' => function($d, $row ){return '<a class="empView" data-id="'.$d.'"><i class="fa fa-eye fa-lg"></i></a>';}); $nr++;
 	$columns[] = array( 'db' => 'id', 'dt' => $nr, 'formatter' => function($d, $row ){return '<a class="emptrash" data-id="'.$d.'"><i class="fa fa-trash fa-lg"></i></a>';}); $nr++;
 
 	
