@@ -199,8 +199,19 @@
 	}
 	else 
 	{
-		// show date 
-		$text3 = str_replace('<b>{DATE_VALUE}</b>', '<b>'.$_GET['d'].'</b>', $text3);
+	// show date 
+
+			$dateSelected = $_GET['d'];
+			$explodedDate = explode('-',$_GET['d']);
+
+			$newyearValue = convertetYears($explodedDate['2'], $langvalue);
+
+
+			$newYearValueWithThaiYear = $explodedDate['0'].'-'.$explodedDate['1'].'-'.$newyearValue;
+		
+
+
+		$text3 = str_replace('<b>{DATE_VALUE}</b>', '<b>'. $newYearValueWithThaiYear.'</b>', $text3);
 	}
 	
 
@@ -324,8 +335,10 @@
 
 
 	if ($langvalue == 'th') {
+		$text3 = str_replace('<b>{GENDER_VALUE}</b>', '<b>' . $title[$emp_title] . '</b>', $text3);
 		$text3 = str_replace('<b>{EMPLOYEE_NAME}</b>', '<b>' . $emp_full_name . '</b>', $text3);
 	} else if ($langvalue == 'en') {
+		$text3 = str_replace('<b>{GENDER_VALUE}</b>', '<b>' . $title[$emp_title] . '</b>', $text3);
 		$text3 = str_replace('<b>{EMPLOYEE_NAME}</b>', '<b>' . $emp_en_name . '</b>', $text3);
 	}
 
@@ -343,15 +356,17 @@
 	$html .= $imgfile;
 	$html .= $text1;
 	$html .= $block2;
-	if ($langvalue == 'en') {
-	 $html .= $imgfile;
+	// if ($langvalue == 'en') {
+	// $html .= '<pagebreak>';
+
+	//  $html .= $imgfile;
 	
-	}
-	if($langvalue == 'th')
-	{
+	// }
+	// if($langvalue == 'th')
+	// {
 		$html .= '<pagebreak>';
 		$html .= $imgfile;
-	}
+	// }
 	$html .= $text3;
 	$html .= '</body></html>';	
 
