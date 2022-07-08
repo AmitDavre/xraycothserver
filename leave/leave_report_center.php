@@ -30,6 +30,8 @@
 	position:relative;
 	min-height:1000px;
 }
+	
+	
 </style>
 
 	<div class="widget autoheight" style="margin-bottom:15px">
