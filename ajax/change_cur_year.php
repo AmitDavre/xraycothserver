@@ -2,7 +2,7 @@
 	if(session_id()==''){session_start();}
 	ob_start();
 	include('../dbconnect/db_connect.php');
-	
+	// current year session here
 	$_SESSION['rego']['cur_year'] = $_REQUEST['year'];
 	$_SESSION['rego']['year_en'] = $_REQUEST['year'];
 	$_SESSION['rego']['year_th'] = (int)$_REQUEST['year'] + 543;
