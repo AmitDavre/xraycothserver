@@ -1,5 +1,5 @@
 <script type="text/javascript">
-
+	var testing = 0 ;
 	var height = window.innerHeight-303;
 	var headerCount = 1;
 	var payment_term = 0;
