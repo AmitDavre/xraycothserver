@@ -5,7 +5,7 @@
 	$today1m = strtotime(date('d-m-Y', strtotime("+35 days")));
 	//var_dump($today);
 	//var_dump($today1m);
-	
+	// var 
 	$data['trial'] = array();
 	$data['expire'] = array();
 	//$periods = array();
