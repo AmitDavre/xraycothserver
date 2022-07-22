@@ -7,11 +7,6 @@
 	if($leave_settings['workingdays'] == 5){$disabledWeekdays = '[0,6]';}
 	if($leave_settings['workingdays'] == 6){$disabledWeekdays = '[0]';}
 	if($leave_settings['workingdays'] == 7){$disabledWeekdays = '[]';}
-
-	// echo '<pre>';
-	// print_r($_SESSION['rego']['name']);
-	// echo '</pre>';
-	// exit;
 	
 	$legend[$lng['Requested']] = 'RQ';
 	$legend[$lng['Approved']] = 'AP';
