@@ -54,7 +54,8 @@
 	if(empty($data['attach1'])){$attach1 = '<i style="color:#ccc" class="fa fa-download fa-lg"></i></a>';}else{$attach1 = '<a download href="'.ROOT.$cid.'/employees/'.$data['attach1'].'"><i class="fa fa-download fa-lg"></i></a>';}
 	if(empty($data['attach2'])){$attach2 = '<i style="color:#ccc" class="fa fa-download fa-lg"></i></a>';}else{$attach2 = '<a download href="'.ROOT.$cid.'/employees/'.$data['attach2'].'"><i class="fa fa-download fa-lg"></i></a>';}
 
-?>
+?>	
+<!-- croppie js link here-->
 	<link rel="stylesheet" type="text/css" href="../assets/css/croppie_emp.css?<?=time()?>" />
 
 <?	if(!empty($data['image'])){
