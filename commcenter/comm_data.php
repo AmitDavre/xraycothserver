@@ -1,5 +1,5 @@
 <?
-	// $jsonCustomers = getJsonCustomers();
+	
 	// $jsonProducts = getJsonProducts('A');
 	// $emailTemplates = getEmailTemplates();
 	// $contactEmails = getContactEmails();
