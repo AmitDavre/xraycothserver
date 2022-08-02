@@ -3,7 +3,7 @@
 	if(!$_SESSION['rego']['employee_history']['view']){ 
 		echo '<div class="msg_nopermit">You have no access to this page</div>'; exit;
 	}
-
+//
 	$update = 1;
 	if(isset($_SESSION['rego']['empID'])){ // EDIT EMPLOYEE ////////////////////////////////////////////////
 		$empID = $_SESSION['rego']['empID'];
