@@ -1,8 +1,5 @@
 <?
-	/*if($_SESSION['rego']['access']['payroll']['module'] == 0 && $_SESSION['rego']['access']['approve']['payroll']['access'] == 0){
-		echo '<div class="msg_nopermit">You have no permission<br>to enter this page</div>'; 
-		exit;
-	}*/
+
 
 ?>
 <style>
