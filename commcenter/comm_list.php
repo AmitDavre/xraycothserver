@@ -11,11 +11,7 @@
 		}
 	}
 
-	// echo '<pre>';
-	// print_r($_SESSION['RGadmin']);
-	// print_r($_SESSION['rego']);
-	// echo '</pre>';
-	// exit;
+
 
 ?>
 <style type="text/css">
