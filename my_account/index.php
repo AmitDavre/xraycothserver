@@ -142,7 +142,7 @@
 			header('location: ../login.php');
 		} ?>
 	
-	<!-- Modal Contactform -->
+
 	<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
 		 <div class="modal-dialog" style="width:600px">
 			  <div class="modal-content">
